@@ -30,9 +30,7 @@ exports.signUp = catchAsync(async(req,res,next) => {
     const newUser = await User.create({
         FullName: value.FullName,
         email: value.email,
-        password:value.password,
-        role: value.role,
-        bio: value.bio
+        password:value.password
     })
     createToken(newUser, 201, res)
 })
