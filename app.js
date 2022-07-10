@@ -14,6 +14,10 @@ app.use('/ThinkyBlog', categoryRouter)
 app.use('/ThinkyBlog', userRouter)
 app.use('/ThinkyBlog', articleRouter)
 
+app.post('/user',(req,res) => {
+    res.sendStatus(200)
+})
+
 app.all('*', (req,res,next) => {
     next(new AppError(`Can't find ${req.originalUrl} on this server`, 400))
 })
