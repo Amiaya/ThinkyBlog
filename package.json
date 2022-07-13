@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon server",
     "start:prod": "set NODE_ENV=production&&nodemon server",
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
